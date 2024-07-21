@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://cgkukaii7itko"]
+[gd_scene load_steps=7 format=3 uid="uid://cgkukaii7itko"]
 
 [ext_resource type="Texture2D" uid="uid://bcilnhqohr4pi" path="res://Assets/congrats.png" id="1_0qhhx"]
+[ext_resource type="Script" path="res://Scenes/Sandbox.gd" id="1_3kuqb"]
 [ext_resource type="PackedScene" uid="uid://tax4rkv3lfiv" path="res://Scenes/Egg.tscn" id="1_i15u2"]
 [ext_resource type="Texture2D" uid="uid://bkyi5bbvfofq8" path="res://Assets/Captura de Tela 2024-07-20 às 20.47.18.png" id="2_s2g2w"]
 
@@ -131,7 +132,8 @@ texture = ExtResource("2_s2g2w")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_ckrie")
 
-[node name="Node2D" type="Node2D"]
+[node name="Sandbox" type="Node2D"]
+script = ExtResource("1_3kuqb")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_left = 320.0
@@ -143,8 +145,6 @@ texture = ExtResource("1_0qhhx")
 [node name="Egg" parent="." instance=ExtResource("1_i15u2")]
 position = Vector2(0, -40)
 turnIntensity = 5000.0
-
-[node name="Camera2D" type="Camera2D" parent="Egg"]
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_tcjgg")
