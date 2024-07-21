@@ -1,0 +1,57 @@
+[gd_scene load_steps=7 format=3 uid="uid://hh5p2lk7txse"]
+
+[ext_resource type="Script" path="res://StartScreen.gd" id="1_ad246"]
+[ext_resource type="Texture2D" uid="uid://gladwdi8upvd" path="res://Assets/eggg.png" id="2_auvgp"]
+[ext_resource type="Texture2D" uid="uid://do627go15gtvv" path="res://Assets/lame.png" id="3_1nry2"]
+[ext_resource type="Texture2D" uid="uid://dsne4p04e2iw" path="res://Assets/super.png" id="4_nixg0"]
+[ext_resource type="Texture2D" uid="uid://bve23jhpu2wpa" path="res://Assets/gamer.png" id="5_jgpbw"]
+[ext_resource type="Texture2D" uid="uid://cae408kbhdvw2" path="res://Assets/press.png" id="6_bny72"]
+
+[node name="StartScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ad246")
+
+[node name="egg" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 784.0
+offset_top = -16.0
+offset_right = 1184.0
+offset_bottom = 384.0
+texture = ExtResource("2_auvgp")
+
+[node name="lame" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 384.0
+offset_top = -8.0
+offset_right = 784.0
+offset_bottom = 392.0
+texture = ExtResource("3_1nry2")
+
+[node name="super" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -8.0
+offset_top = -144.0
+offset_right = 392.0
+offset_bottom = 256.0
+texture = ExtResource("4_nixg0")
+
+[node name="game" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -8.0
+offset_top = 256.0
+offset_right = 392.0
+offset_bottom = 656.0
+texture = ExtResource("5_jgpbw")
+
+[node name="start" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 592.0
+offset_top = 272.0
+offset_right = 992.0
+offset_bottom = 672.0
+texture = ExtResource("6_bny72")
