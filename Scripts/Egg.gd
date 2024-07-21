@@ -4,7 +4,7 @@ class_name Egg
 @export var turnIntensity: = 500.0
 @export var acceleration: = 250.0
 @export var jump: = 500
-@export var resistance: = 300
+@export var resistance: = 500
 @export var coyoteTime: = 0.2
 
 @onready var timer: Timer = $Timer
