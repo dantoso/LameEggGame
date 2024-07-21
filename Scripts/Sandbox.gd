@@ -2,18 +2,23 @@ extends Node2D
 class_name Sandbox
 
 @onready var egg: = $Egg
+@onready var timer: Timer = $DeathTimer
 var waitingRetry: = false
 var start: = Vector2.ZERO
 
 func _ready() -> void:
 	start = egg.global_position
+	timer.timeout.connect(
+		func():
+			waitingRetry = true
+	)
 
 
 func didDie() -> void:
 	egg.can_sleep = true
 	egg.sleeping = true
 	remove_child(egg)
-	waitingRetry = true
+	timer.start()
 
 
 func _process(delta: float) -> void:
