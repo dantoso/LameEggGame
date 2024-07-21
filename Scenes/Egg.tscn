@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://tax4rkv3lfiv"]
+
+[ext_resource type="Script" path="res://Scripts/Egg.gd" id="1_kyjc4"]
+[ext_resource type="Texture2D" uid="uid://b1uhj41rd1sj4" path="res://Assets/egg.png" id="2_05c85"]
+
+[node name="Egg" type="RigidBody2D"]
+script = ExtResource("1_kyjc4")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(5, 5)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-9.53674e-07, 9.53674e-07)
+scale = Vector2(0.03765, 0.03765)
+texture = ExtResource("2_05c85")
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="."]
+position = Vector2(2.38419e-07, 0)
+scale = Vector2(0.037156, 0.037156)
+polygon = PackedVector2Array(0, -736, 176, -704, 312, -608, 528, -320, 624, 8, 624, 208, 536, 448, 408, 608, 216, 728, 0, 760, -208, 720, -400, 592, -512, 448, -592, 208, -592, -32, -496, -312, -312, -584, -168, -688)
