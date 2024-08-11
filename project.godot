@@ -13,7 +13,7 @@ config_version=5
 config/name="LameEggGame"
 run/main_scene="res://Scenes/StartScreen.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="res://Assets/icon.png"
 
 [dotnet]
 
