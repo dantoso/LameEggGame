@@ -32,3 +32,7 @@ func _process(delta: float) -> void:
 			add_child(egg)
 			egg.sleeping = false
 
+
+func _unhandled_input(event) -> void:
+	if event.is_action_pressed("start") && timer.is_stopped() && !waitingRetry:
+		egg.die()
